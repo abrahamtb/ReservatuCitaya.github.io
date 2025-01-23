@@ -1,12 +1,12 @@
 .body1 {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 30px;
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: start;
+    min-height: 90vh;
 }
 
 .container {
@@ -28,7 +28,7 @@
 
 .category img {
     width: 100%;
-    height: auto;
+    height: 180px;
     border-radius: 5px;
 }
 
@@ -52,4 +52,53 @@
     .container {
         grid-template-columns: 1fr;
     }
+}
+
+
+.ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* Estilo para las categorías principales */
+.li > h3{
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Estilo para las sublistas */
+.ul .ul {
+    margin-left: 20px;
+    font-size: 1em;
+    color: #34495e;
+}
+
+/* Estilo para los elementos dentro de las sublistas */
+.ul .ul .li {
+    margin-bottom: 5px;
+}
+
+/* Agregar espaciado y bordes entre las categorías */
+.li {
+    margin-bottom: 9px;
+    padding: 4px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* Hover sobre los elementos para hacerlos interactivos */
+.li:hover {
+    background-color: gray;
+}
+
+/* Estilo para los elementos en las sublistas */
+.ul .ul li {
+    font-size: 1em;
+    color: grey;
 }
