@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservaTuCita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservas.css">
+</head>
+<body>
+    <header>
+        <div class="contact-info">
+            <img src="img/phone.png" alt="" class="icono">
+            <span class="letra"> (064) 129-875 </span>
+            <img src="img/email.png" alt="" class="icono"> 
+            <span class="letra"> reservatucitaya@gmail.com  </span>
+
+        </div>
+        <div class="contact-info2">
+            <span class="letra" >  SÍGUENOS </span>
+            <span class="palo"></span>
+            <img src="img/FB.png" alt="" class="icono">
+            <img src="img/twitter (2).png" alt="" class="icono">
+            <img src="img/instagram.png" alt="" class="icono">
+            <span class="contacto">CONTÁCTANOS</span>
+
+        </div>
+      
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catologo.html">Catálogo de servicios</a>
+        <a href="reservas.html">Página de reservas</a>
+        <a href="perfilUsuario.html">Perfil de usuario</a>
+    </nav>
+<div class="body1">
+    <div class="main-container">
+        <div class="form-container">
+            <h1>RESERVA TU CITA</h1>
+            <form action="#" method="post">
+                <label for="servicio">Selecciona un servicio</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">-- Seleccionar --</option>
+                    <option value="medico">Médico</option>
+                    <option value="salud">Salud y Bienestar</option>
+                    <option value="restaurante">Restaurante</option>
+                    <!-- Agregar más opciones según sea necesario -->
+                </select>
+
+                <label for="categoria">Selecciona una categoría</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">-- Seleccionar --</option>
+                    <option value="categoria1">Categoría 1</option>
+                    <option value="categoria2">Categoría 2</option>
+                </select>
+
+                <label for="fecha">Selecciona la fecha y hora</label>
+                <input type="datetime-local" id="fecha" name="fecha" required>
+
+                <label for="nombre">Ingresa tus nombres y apellidos</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                <label for="telefono">Ingresa tu teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+
+                <label for="correo">Ingresa tu correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Describe brevemente tu solicitud"></textarea>
+
+                <button type="submit">Reservar Cita</button>
+            </form>
+        </div>
+
+        <div class="reservations-container">
+            <h2>Tu Citas Reservadas</h2>
+            <div class="reservation-item">
+                <p><strong>Servicio:</strong> Médico</p>
+                <p><strong>Fecha:</strong> 2025-01-23 10:00</p>
+                <p><strong>Cliente:</strong> Juan Pérez</p>
+            </div>
+            <div class="reservation-item">
+                <p><strong>Servicio:</strong> Salud y Bienestar</p>
+                <p><strong>Fecha:</strong> 2025-01-24 14:30</p>
+                <p><strong>Cliente:</strong> María García</p>
+            </div>
+            <!-- Más reservas aquí -->
+        </div>
+    </div>
+
+</div>
+  
+    <footer>
+        COPYRIGHT © 2025 RESERVATUCITA. TODOS LOS DERECHOS RESERVADOS.
+    </footer>
+</body>
+</html>
